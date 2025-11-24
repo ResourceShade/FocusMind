@@ -11,3 +11,4 @@ Route::get('/produtos/adicionar', [ProdutoController::class, 'store']);
 Route::get('/contato', [ContatoController::class, 'contato']);
 Route::get('/', [PaginasController::class, 'index']);
 Route::get('/sobre', [PaginasController::class, 'sobre']);
+Route::get('/atividades', [AppHttpControllersAtividadeController::class, 'index'])->name('atividades.index');
