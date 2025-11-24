@@ -6,6 +6,10 @@
     <title>Meu site Laravel</title>
 </head>
 <body>
+    <nav>
+    <!-- outros links -->
+    <a href="{{ route('atividades.index') }}">Atividades</a>
+</nav>
     @include('components.menu')
     <main>
         @yield('conteudo')
