@@ -2,12 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaginasController;
-use App\Http\Controllers\ContatoController;
-use App\Http\Controllers\ProdutoController;
 
+// Rotas FocusMind
+Route::get('/', [PaginasController::class, 'dashboard']);
+Route::get('/tarefas', [PaginasController::class, 'tarefas']);
+Route::get('/timer', [PaginasController::class, 'timer']);
+Route::get('/grupos', [PaginasController::class, 'grupos']);
 
-Route::get('/produtos', [ProdutoController::class, 'index']);
-Route::get('/produtos/adicionar', [ProdutoController::class, 'store']);
-Route::get('/contato', [ContatoController::class, 'contato']);
-Route::get('/', [PaginasController::class, 'index']);
+// Rotas antigas mantidas
 Route::get('/sobre', [PaginasController::class, 'sobre']);
+Route::get('/contato', [PaginasController::class, 'colaboracao']);

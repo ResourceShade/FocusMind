@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('conteudo')
-    <h1>Sobre</h1>
-    <p>Esta é a página sobre do nosso site Laravel.</p>
+<link rel="stylesheet" href="/css/estilo.css">
+
+    <h1>Atividades</h1>
+    <p>Lista de atividades</p>
 @endsection

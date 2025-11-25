@@ -1,0 +1,187 @@
+/* ====== RESET SUAVE ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #F4F6FB; /* cinza-azulado SUPER leve */
+    color: #333;
+    line-height: 1.4;
+}
+
+/* ====== NAVBAR ====== */
+header {
+    background: #CCD0FF; /* azul acinzentado suave */
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #BFC3F2;
+}
+
+header a {
+    color: #222;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* ====== TÍTULOS ====== */
+h1, h2, h3 {
+    color: #2A2A40;
+    margin-bottom: 10px;
+}
+
+/* ====== CONTAINER PADRÃO ====== */
+main {
+    padding: 25px;
+}
+
+/* ====== BOTÕES ====== */
+button, .btn {
+    background: #D9DCFF;
+    border: 1px solid #B9BCED;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 500;
+}
+
+button:hover, .btn:hover {
+    background: #C9CCFF;
+}
+
+/* Botão de alerta (excluir etc.) */
+.btn-danger {
+    background: #ffdddd;
+    border-color: #ffbbbb;
+}
+.btn-danger:hover {
+    background: #ffcccc;
+}
+
+/* ====== CARDS ====== */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border: 1px solid #E1E3F2;
+    margin-bottom: 20px;
+}
+
+/* ====== INPUTS ====== */
+input, textarea, select {
+    width: 100%;
+    padding: 7px;
+    border-radius: 6px;
+    border: 1px solid #C5C8E0;
+    background: #F8F9FF;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #9FA4FF;
+    background: #ffffff;
+}
+
+/* ====== MODAL ====== */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.35);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 20px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    border: 1px solid #D4D7EF;
+}
+
+/* ====== CAIXAS DE LISTA (tipo Notion) ====== */
+.tarefa {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #E4E6F3;
+    margin-bottom: 8px;
+    transition: 0.2s;
+}
+
+.tarefa:hover {
+    background: #F3F4FF;
+}
+
+.tarefa-atrasada {
+    color: red;
+    font-weight: bold;
+}
+
+/* ====== SIDEBAR ====== */
+#sidebar {
+    background: #E6E8F5;
+    border-right: 2px solid #D5D7EF;
+}
+
+.lista-item {
+    padding: 10px;
+    margin-bottom: 6px;
+    background: #F2F3FF;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px solid #D6D8F0;
+    transition: 0.2s;
+}
+
+.lista-item:hover {
+    background: #E9EBFF;
+}
+
+.lista-item.ativo {
+    background: #CCD0FF;
+    font-weight: bold;
+    border-color: #B7BAF2;
+}
+
+/* ====== TRÊS PONTINHOS ====== */
+.tarefa-acoes,
+.lista-acoes {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.tarefa-acoes:hover,
+.lista-acoes:hover {
+    background: #E3E5FF;
+}
+
+/* ====== ANIMAÇÕES SUAVES ====== */
+.fade-in {
+    animation: fade 0.2s ease;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(5px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
